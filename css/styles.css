@@ -1,0 +1,123 @@
+body {
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ece6e6;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+.sidenav h3 {
+  padding-left: 10px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #a65257;
+  display: block;
+}
+
+.sidenav a:hover {
+  background-color: #f1f1f1;
+}
+
+.main {
+  margin-right: 250px; /* Same as the width of the sidenav */
+  font-size: 18px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.flex-container,
+.pictures-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.pictures-flex-container {
+  flex-wrap: wrap;
+}
+.pictures-flex-container img {
+  margin: 40px;
+}
+
+.left-col {
+  width: 50%;
+  line-height: 1.8;
+  margin-right: 30px;
+}
+
+.right-col {
+  width: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.green {
+  color: #3f7b56;
+}
+
+.quotation {
+  background-color: antiquewhite;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin-right: 15px;
+}
+
+button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  float: right;
+}
+
+.padding {
+  margin-left: 400px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#message {
+  color: red;
+}
