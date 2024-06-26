@@ -14,7 +14,8 @@ body {
   background-color: #ece6e6;
   overflow-x: hidden;
   padding-top: 20px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   margin: 2px 0px;
 }
 
@@ -48,7 +49,7 @@ body {
 .menu-icon,
 .close-icon {
   display: none;
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 1.5rem;
 }
 
@@ -58,6 +59,8 @@ body {
   top: 0;
   right: 0;
   float: right;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 /* MAIN */
@@ -159,6 +162,19 @@ button {
 }
 
 /* mobile settings */
+@media (max-width: 900px) {
+  .flex-container {
+    flex-direction: column-reverse;
+  }
+  .left-col,
+  .right-col {
+    width: 100%;
+  }
+  .left-col {
+    margin: 0 15px;
+  }
+}
+
 @media (max-width: 700px) {
   /* NAV */
   .nav {
