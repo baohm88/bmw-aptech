@@ -28,8 +28,13 @@ body {
   display: block;
 }
 
+.sidenav span {
+  font-size: 24px;
+  color: #ea7676;
+}
+
 .sidenav a:hover {
-  background-color: #f1f1f1;
+  background-color: white;
 }
 
 .main {
