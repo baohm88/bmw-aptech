@@ -16,7 +16,24 @@ document.querySelector("form").addEventListener("submit", (e) => {
   }
 });
 
+// hide message
 document.querySelector("textarea").addEventListener("keyup", () => {
-  // hide message
   document.getElementById("message").style.display = "none";
+});
+
+// nav
+document.querySelector(".menu-icon").addEventListener("click", () => {
+  document.querySelector(".nav").style.display = "block";
+});
+
+document.querySelector(".nav-item").addEventListener("click", () => {
+  document.querySelector(".nav").style.display = "none";
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 700) {
+    document.querySelector(".nav").style.display = "block";
+  } else {
+    document.querySelector(".nav").style.display = "none";
+  }
 });

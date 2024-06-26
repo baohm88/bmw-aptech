@@ -1,9 +1,9 @@
 body {
   font-family: "Lato", sans-serif;
-  padding: 5px;
 }
 
-.sidenav {
+/* NAV */
+.nav {
   height: 100%;
   width: 230px;
   position: fixed;
@@ -16,31 +16,48 @@ body {
   border-radius: 5px;
 }
 
-.sidenav h3 {
+.nav h3 {
   padding-left: 10px;
 }
 
-.sidenav a {
+.nav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 18px;
   color: #a65257;
+  width: 100%;
   display: block;
 }
 
-.sidenav span {
+.nav span {
   font-size: 24px;
   color: #ea7676;
 }
 
-.sidenav a:hover {
+.nav a:hover {
   background-color: white;
 }
 
+/* MENU */
+.menu-icon,
+.close-icon {
+  display: none;
+  padding: 5px;
+}
+
+.menu-icon {
+  background-color: antiquewhite;
+  position: fixed;
+  top: 0;
+  right: 0;
+  float: right;
+}
+
+/* MAIN */
 .main {
-  margin-right: 250px; /* Same as the width of the sidenav */
+  margin-right: 250px; /* Same as the width of the nav */
   font-size: 18px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 .flex-container,
@@ -70,11 +87,18 @@ body {
   text-align: center;
 }
 
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .justify {
   text-align: justify;
 }
 
-.green {
+/* HDEADER */
+.header h1 {
+  text-align: center;
   color: #3f7b56;
 }
 
@@ -83,9 +107,12 @@ body {
   margin: 5px;
   border-radius: 5px;
   font-size: 50px;
-  display: flex;
-  align-items: center;
   padding: 10px;
+  max-width: 730px;
+}
+
+form {
+  margin-bottom: 15px;
 }
 
 form div {
@@ -103,10 +130,7 @@ button {
   color: white;
   border-radius: 5px;
   float: right;
-}
-
-.padding {
-  margin-left: 400px;
+  margin: 10px 0;
 }
 
 .video-container {
@@ -129,4 +153,40 @@ button {
 
 #message {
   color: red;
+}
+
+/* mobile settings */
+@media (max-width: 700px) {
+  /* NAV */
+  .nav {
+    display: none;
+  }
+
+  /* ICONS */
+  .menu-icon {
+    float: right;
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  .close-icon {
+    display: block;
+  }
+
+  /* MAIN */
+  .main {
+    margin-right: 0;
+  }
+
+  .flex-container {
+    flex-direction: column-reverse;
+  }
+  .left-col,
+  .right-col {
+    width: 100%;
+  }
+  .left-col {
+    margin: 0 15px;
+  }
 }
