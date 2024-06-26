@@ -26,15 +26,18 @@ body {
   font-size: 18px;
   color: #a65257;
   width: 100%;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .nav span {
-  font-size: 24px;
+  font-size: 36px;
   color: #ea7676;
+  padding-right: 10px;
 }
 
-.nav a:hover {
+.nav a:hover,
+.active {
   background-color: white;
 }
 
@@ -43,6 +46,7 @@ body {
 .close-icon {
   display: none;
   padding: 5px;
+  font-size: 1.5rem;
 }
 
 .menu-icon {

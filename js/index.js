@@ -6,7 +6,6 @@ document.querySelector("form").addEventListener("submit", (e) => {
   if (comment.value.length == 0) {
     // show message
     message.style.display = "block";
-    console.log("not ok");
   } else {
     // hide messsage
     message.style.display = "none";
